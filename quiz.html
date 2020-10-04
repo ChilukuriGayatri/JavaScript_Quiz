@@ -1,0 +1,78 @@
+<html>
+<head>
+1.who invented javascript?
+<br>
+<input type="radio" id="q1" name="a" value="Douglas Crockford" />
+Douglas Crockford<br />
+<input type="radio" id="q2" name="a" value="Sheryl Sandberg" />
+Sheryl Sandberg<br />
+<input type="radio" id="q3" name="a" value="Brendan Eich" />
+Brendan Eich<br />
+<button onclick="display()">submit</button>
+<br>
+
+2.Which one of these is a JavaScript package manager?
+<br>
+<input id="q4" type="radio" name="b" value="Node.js">Node.js<br>
+<input id="q5" type="radio" name="b" value="TypeScript">TypeScript<br>
+<input id="q6" type="radio" name="b" value="npm">npm<br>
+<button onclick="display2()">submit</button>
+<br>
+
+3.Which tool can you use to ensure code quality?
+<br>
+<input id="q7" type="radio" name="c" value="jQuery">jQuery<br>
+<input id="q8" type="radio" name="c" value="RequireJS">RequireJS<br>
+<input id="q9" type="radio" name="c" value="ESlint">ESlint<br>
+<button onclick="display3()">submit</button>
+<br>
+
+<br>
+<button align="right" onclick="show()">submit quiz</button>
+
+<script>
+var score = 0;
+function display() {
+  var q_value;
+  if(document.getElementById('q3').checked) {
+       q_value=document.getElementById('q3').value;
+       alert("Correct");
+       score++;
+   }
+   else {
+        alert("oops! Worng");
+        alert("Answer is: Brendan Eich");
+   }
+}
+function display2() {
+  var q2_value;
+  if(document.getElementById('q6').checked) {
+           q2_value=document.getElementById('q6').value;
+           alert("Correct");
+           score++;
+  }
+  else {
+        alert("oops! Worng");
+        alert("Answer is: npm");
+   }
+}
+function display3() {
+  var q3_value;
+  if(document.getElementById('q9').checked) {
+           q3_value=document.getElementById('q9').value;
+           alert("Correct");
+           score++;
+   }
+   else {
+        alert("oops! Worng");
+        alert("Answers is: ESlint");
+   }
+}
+
+function show() {
+   alert("RESULT:" +score);
+}
+
+</script>
+</head>
+</html>
